@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+    <title>中国美食文化</title>
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./files/min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="./files/theme.min.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="./files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./files/theme.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="./files/ie-emulation-modes-warning.js.下载"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+            .bs-docs-footer {
+              background-color: #221f27;
+              color: #99979c;
+              padding-top: 50px;
+              padding-bottom:50px;
+              width: 100%;
+              text-align: left;
+            }
+
+     </style>
+ </head>
+ <body>
+       <!--  Fixed navbar  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="web1.html">美食之旅-吃在路上</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="web1.html">首页</a></li>
+                  <li><a href="web2.html">起源</a></li>
+                  <li><a href="web3.html">发展</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      更多
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a id="action-1" href="web4.html">菜系口味</a></li>
+                      <li><a href="web5.html">特色美食</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+          </nav>
+          <script>
+              $(function(){
+                // 默认显示
+                $(".dropdown-toggle").dropdown('toggle');
+              }); 
+              </script>
+    
+          <div class="page-header">
+                <h1></h1>
+              </div>
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item">
+                    <img src="img/bj1.jpg"  alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIHZpZXdCb3g9IjAgMCAxMTQwIDUwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvMTE0MHg1MDAvYXV0by8jNzc3OiM1NTUvdGV4dDpGaXJzdCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2YTk1MmYyMmRhIHRleHQgeyBmaWxsOiM1NTU7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NTdwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTZhOTUyZjIyZGEiPjxyZWN0IHdpZHRoPSIxMTQwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjxnPjx0ZXh0IHg9IjM5MC41MDc4MTI1IiB5PSIyNzUuNSI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" width="1040px" height="400px" >
+                  </div>
+                  <div class="item">
+                    <img src="img/tp1.jpg" alt=" " src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIHZpZXdCb3g9IjAgMCAxMTQwIDUwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvMTE0MHg1MDAvYXV0by8jNjY2OiM0NDQvdGV4dDpTZWNvbmQgc2xpZGUKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmE5NTJmNDQxNiB0ZXh0IHsgZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjU3cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YTk1MmY0NDE2Ij48cmVjdCB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiM2NjYiLz48Zz48dGV4dCB4PSIzMzUuNjAxNTYyNSIgeT0iMjc1LjUiPlNlY29uZCBzbGlkZTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" width="1040px" height="400px" >
+                  </div>
+                  <div class="item active">
+                    <img src="img/ccx1.jpg" alt=" " src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI1MDAiIHZpZXdCb3g9IjAgMCAxMTQwIDUwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvMTE0MHg1MDAvYXV0by8jNTU1OiMzMzMvdGV4dDpUaGlyZCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2YTk1MmYwMDQ5IHRleHQgeyBmaWxsOiMzMzM7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NTdwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTZhOTUyZjAwNDkiPjxyZWN0IHdpZHRoPSIxMTQwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjxnPjx0ZXh0IHg9IjM3Ny44NjcxODc1IiB5PSIyNzUuNSI+VGhpcmQgc2xpZGU8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" width="1040px" height="400px" >
+                  </div>
+                </div>
+                <a class="left carousel-control" href="https://v3.bootcss.com/examples/theme/#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="https://v3.bootcss.com/examples/theme/#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              </div>
+            </div>
+        
+        
+            </div> <!-- /container -->
+        
+        
+            <!-- Bootstrap core JavaScript
+            ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="./files/jquery.min.js.下载"></script>
+            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+            <script src="./files/bootstrap.min.js.下载"></script>
+            <script src="./files/docs.min.js.下载"></script>
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="./files/ie10-viewport-bug-workaround.js.下载"></script>
+          
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="1140" height="500" viewBox="0 0 1140 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+            <defs>
+                <style type="text/css">
+                </style>
+            </defs>
+            <text x="0" y="57" style="font-weight:bold;font-size:57pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thirdslide</text>
+        </svg>
+
+ <h1>发现世界，发现美食</h1> 
+ <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+ <br></br>
+
+<!-- /btn-group -->
+  <div class="bs-example" data-example-id="split-button-dropdown">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">省份</button>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">四川</a></li>
+        <li><a href="#">河南</a></li>
+        <li><a href="#">陕西</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">更多省市</a></li>
+      </ul>
+    </div>
+  
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">四川</button>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">火锅</a></li>
+        <li><a href="#">冷吃兔</a></li>
+        <li><a href="#">钵钵鸡</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">更多美食</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-success">河南</button>
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">胡辣汤</a></li>
+        <li><a href="#">烩面</a></li>
+        <li><a href="#">葛记红焖羊肉</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">更多美食</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-info">陕西</button>
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">肉夹馍</a></li>
+        <li><a href="#">biang biang面</a></li>
+        <li><a href="#">凉皮</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">更多美食</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning">浙江</button>
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">金华火腿</a></li>
+        <li><a href="#">叫花鸡</a></li>
+        <li><a href="#">五芳斋粽子</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">更多美食</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">山东</button>
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">水煎包</a></li>
+        <li><a href="#">德州扒鸡</a></li>
+        <li><a href="#">煎饼</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">更多美食</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div>
+
+     <div class="page-header"> 
+            <h1>  代表美食   </h1>
+    </div>
+
+
+              <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <img src="img/bbj.jpg" alt="100%x200" style="height: 300px; width: 70%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzE5IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMxOSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTZiNDZiZWYyOTggdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNmI0NmJlZjI5OCI+PHJlY3Qgd2lkdGg9IjMxOSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTcuOTIxODc1IiB5PSIxMDcuMiI+MzE5eDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                        <div class="caption">
+                                <h3>四川：钵钵鸡</h3>
+                                <p>钵钵鸡是一种四川传统名小吃，属于川菜系。从清代流传至今已有上百年的历史。是以陶器钵盛放配以麻辣为主的佐料，加上多种调料的去骨鸡片拌和而成。有皮脆肉嫩，麻辣鲜香，甜咸适中的特色。有着深厚的历史渊源。钵钵鸡食用方便，多种口味可选择，配以特色鸡汤饭即可休闲品味，亦可权作一餐。钵钵鸡，还是可以观赏的。</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Pick</a> <a href="#" class="btn btn-default" role="button">Nope</a></p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <img src="img/rjm.jpg" alt="100%x200" style="height: 300px; width: 70%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzE5IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMxOSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTZiNDZiZjMwZGQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNmI0NmJmMzBkZCI+PHJlY3Qgd2lkdGg9IjMxOSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTcuOTIxODc1IiB5PSIxMDcuMiI+MzE5eDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                        <div class="caption">
+                          <h3>陕西：肉夹馍</h3>
+                          <p>陕西地区有使用白吉馍的“腊汁肉夹馍”、宝鸡西府的肉臊子夹馍(肉臊子中放食醋)、潼关的潼关肉夹馍（与白吉馍不同，其馍外观焦黄，条纹清晰，内部呈层状，饼体发胀，皮酥里嫩，火功到家，食用时温度以烫手为佳，且老潼关肉夹馍是热馍夹凉肉，饼酥肉香，爽而不腻）。肉夹馍是陕西著名小吃。</p>
+                          <p><a href="#" class="btn btn-primary" role="button" target="_blank">Pick</a> <a href="#" class="btn btn-default" role="button" target="_blank">Nope</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="thumbnail">
+                        <img src="img/yr.jpg" alt="100%x200" style="height: 300px; width: 70%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzE5IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMxOSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTZiNDZiZjExYTYgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxNnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNmI0NmJmMTFhNiI+PHJlY3Qgd2lkdGg9IjMxOSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMTcuOTIxODc1IiB5PSIxMDcuMiI+MzE5eDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                        <div class="caption">
+                          <h3>河南：红焖羊肉</h3>
+                          <p>红焖羊肉起源于河南新乡，由李武卿先生创制，以肉嫩、味鲜、汤醇、价廉深受各路食客的好评，很快便风靡牧野。一些头脑精明者也抓住这一商机，由食客变成了老板。红焖羊肉很快便红遍中原，闯进京都，成了名闻遐迩的一道豫菜新品。在最鼎盛的1995年到2007年间，新乡、郑州等地出现了“红焖炊烟浩荡处，今日早市没有羊”的奇特景观。</p>
+                          <p><a href="#" class="btn btn-primary" role="button" target="_blank">Pick</a> <a href="#" class="btn btn-default" role="button" target="_blank">Nope</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <li>
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                        <span class="glyphicon-class">glyphicon glyphicon-map-marker</span>
+                      </li>
+
+<h1>吃着东西就想起一座城</h1>
+<br></br>
+
+<div class="container">
+        <div class="row" >
+           <div class="col-xs-6 col-sm-3" 
+              style="background-color: #dedef8;
+              box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+              <p>提起一座城市。只想到那儿的美食。这就是吃货旅行的意义。</p>
+           </div>
+           <div class="col-xs-6 col-sm-3" 
+              style="background-color: #dedef8;box-shadow: 
+              inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+              <p>欧美厨房之猪全餐、清真中国牛肉馆之美味牛餐、
+
+                    老阚厨房之山东扒鸡、梁记烧腊店之烧鹅、
+                    
+                    喜福园之清蒸鲑鱼卷、上海小馆之清炒虾仁、
+                    
+                    潮汕牛肉店之牛肉火锅、上海极品轩之霸王别姬、
+                    
+                    香港品源美食之黄蒲蛋、天津卫老米食堂之海鲜豆腐脑、
+                    
+                    苏杭点心店之小笼汤包、红桥左岸之香蒜培根乳酪„„
+                    
+                    吃食是一种幸福，品味是一种情趣，
+                    
+                    而透明墨香感受文字中的麻辣咸甜
+                    
+                    更是一种快乐。
+              </p>
+              <p>能吃者得到一份暖胃的享受；
+
+                    会吃者找到一份心的平静。
+              </p>
+           </div>
+     
+           <div class="clearfix visible-xs"></div>
+     
+           <div class="col-xs-6 col-sm-3" 
+              style="background-color: #dedef8;
+              box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+              <p> “人间定无可意，怎换得玉脍丝莼”的句子，这“玉脍”指的就是隋炀帝誉为“东南佳味”的“金齑玉脍”。
+                  “脍”是切成薄的鱼片；“齑”就是切碎了的腌菜或酱菜，也引申为“细碎”。
+                  “金齑玉脍”就是以霜的后白色的鲈鱼为主料，拌以切细了的色泽金黄的花叶菜。“丝莼”则是用莼花丝做成的莼羹，也是吴地名菜。 
+              </p>
+           </div>
+           <div class="col-xs-6 col-sm-3" 
+              style="background-color: #dedef8;box-shadow: 
+              inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+              <p>中国菜肴有八大菜系，每一种菜系都有无数的名菜，各有特色，让人垂涎欲滴.
+              </p>
+           </div>
+        </div>
+     </div>
+     <br></br>
+ 
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+<h1 class="text-danger">     旅行的目的在于吃 .   </h1>
+<li>
+        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+      </li>
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h3 class="featurette-heading">最让人感到快乐的事 <span class="text-muted">就是吃</span></h2>
+                <p class="lead">啥也别说了吃就对了</p>
+                <p>
+                    <h1 class="text-center">吃！</h1>
+                 </p>
+
+              </div>
+              <div class="col-md-5">
+                <img src="img./px.jpg" width="500" height="500" class="featurette-image img-responsive center-block" alt="">
+              </div>
+            </div>
+      
+            <hr class="featurette-divider">
+      
+            <div class="row featurette">
+              <div class="col-md-7 col-md-push-5">
+                <h3 class="featurette-heading">喜爱的漫画里也有美食 <span class="text-success">只能看不能吃的那种</span></h2>
+                <p class="lead">漫画里的当然和现实生活中的不一样</p>
+                  <p><h1 class="text-margin left">
+                      (@-@)
+                  </h1></p></p>
+                  <h1 class="text-center">但存在的意义是相似的</h1>
+                  <br></br>
+                  <h1 class="text-right">为了爱</h1>
+
+              </div>
+              <div class="col-md-5 col-md-pull-7">
+                <img src="img./m1.jpg" width="500" height="500" class="featurette-image img-responsive center-block" alt="">
+              </div>
+            </div>
+             <br></br>
+             <h2>跑跑小句子</h2>
+            <div class="alert alert-success" role="alert">---------生活中一定有美食的存在</div>
+            <div class="alert alert-info" role="alert">---------------------------------------------------------------------美食沟通人与人之间的距离</div>
+            <div class="alert alert-warning" role="alert"> --------------------------------------------------------------------------------------------------------------------------------------------------------在一来一往的吃中</div>
+            <div class="alert alert-success" role="alert">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------不知不觉的拉近了人们的距离</div>
+            <div class="alert alert-info" role="alert">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------有时胃会温暖我们的心</div>
+            <div class="alert alert-warning" role="alert">---------------------------------------------------------------------------------------------------------------------------------------------------------------------所以食物是有力的存在。</div>
+
+<h2>食物间的趣味对话</h2>
+<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><br></br>
+            <div class="bs-example" data-example-id="default-media">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#" target="_blank">
+                          <img class="media-object" src="img/bbj.jpg" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmI0NmUyYzFkOSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YjQ2ZTJjMWQ5Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy4xNzk2ODc1IiB5PSIzNi41NTYyNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">钵钵鸡</h4>
+                       我有时特别辣，有的外地人都会受不了，哈哈哈哈哈哈，骄傲的叉会儿腰。(ಡωಡ)hiahiahia 
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#" target="_blank">
+                          <img class="media-object" src="img/px.jpg" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmI0NmUyY2Q0MSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YjQ2ZTJjZDQxIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy4xNzk2ODc1IiB5PSIzNi41NTYyNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">红焖羊肉</h4>
+                        我只是一般般辣，毕竟你在四川嘛，我肯定不是你的对手。
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#" target="_blank">
+                              <img class="media-object" src="img/j.jpg" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmI0NmUyN2M2MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YjQ2ZTI3YzYyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy4xNzk2ODc1IiB5PSIzNi41NTYyNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <h4 class="media-heading">蜜汁烤鸡</h4>
+                            我是烤鸡，上面全是甜甜的蜂蜜，不会上火，还有肉吃！ ((٩(//̀Д/́/)۶))
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="media-body">
+                        <h4 class="media-heading">提拉米苏</h4>
+                        吃完你们肯定很想吃点甜品塞塞肚子，这个时候就需要我来啦
+                      </div>
+                      <div class="media-right">
+                        <a href="#" target="_blank">
+                          <img class="media-object" src="img/td.jpg" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmI0NmUyNzViMyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YjQ2ZTI3NWIzIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy4xNzk2ODc1IiB5PSIzNi41NTYyNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="#" target="_blank">
+                          <img class="media-object" src="img/rjm.jpg" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmI0NmUyNjZiMyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YjQ2ZTI2NmIzIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy4xNzk2ODc1IiB5PSIzNi41NTYyNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">肉夹馍</h4>
+                        我是凉皮儿的最佳搭档，在炎炎夏日里我完全可以填饱肚子，还不会吃起来热的流汗，爽的一儿匹。。。
+                      </div>
+                      <div class="media-right">
+                        <a href="#" target="_blank">
+                          <img class="media-object" src="img/d4.gif" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNmI0NmUyODM0OCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE2YjQ2ZTI4MzQ4Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMy4xNzk2ODc1IiB5PSIzNi41NTYyNSI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+     <br></br>
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="web1.html">1</a></li>
+    <li><a href="web2.html">2</a></li>
+    <li><a href="web3.html">3</a></li>
+    <li><a href="web4.html">4</a></li>
+    <li><a href="web5.html">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+       
+   
+
+
+    <footer class="bs-docs-footer">
+            <div class="container">
+          
+              <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+          
+              <p>本项目源码受 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议保护，文档受 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_black">CC BY 3.0</a> 开源协议保护。</p>
+          
+            </div>
+     </footer>
+    
+       <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
